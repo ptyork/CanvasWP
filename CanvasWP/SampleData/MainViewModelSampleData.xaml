@@ -1,0 +1,67 @@
+﻿<local:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CanvasWP">
+    
+    <local:MainViewModel.Conversations>
+        <local:ConversationViewModel 
+            AvatarURL="https://canvas.instructure.com/images/users/391920" 
+            Participants="Participant 1, Participant 2" 
+            LastMessage="Hello world. This is a last message. Woot!!!!" />
+        <local:ConversationViewModel 
+            AvatarURL="https://canvas.instructure.com/images/users/391920" 
+            Participants="Participant 1, Participant 2" 
+            LastMessage="Hello world. This is a last message. Woot!!!!" />
+        <local:ConversationViewModel 
+            AvatarURL="https://canvas.instructure.com/images/users/391920" 
+            Participants="Participant 1, Participant 2" 
+            LastMessage="Hello world. This is a last message. Woot!!!!" />
+    </local:MainViewModel.Conversations>
+    
+    <local:MainViewModel.Courses>
+        <local:CourseViewModel
+            CourseCode="Course1"
+            Id="1"
+            Name="Long Course Name" />
+        <local:CourseViewModel
+            CourseCode="Course2"
+            Id="1"
+            Name="Long Course Name 2" />
+        <local:CourseViewModel
+            CourseCode="Course3"
+            Id="1"
+            Name="Long Course Name 3" />
+    </local:MainViewModel.Courses>
+    
+    <local:MainViewModel.StreamItems>
+        <local:StreamViewModel
+            Context="Course1 - Monday, January 1, 2999"
+            ContextType="Assignment"
+            CourseId="1"
+            CreatedAt="January 1, 2999"
+            InnerId="1"
+            ItemType="Message"
+            Message="Here's the Message, Dude"
+            Title="Here's the title"
+            UpdatedAt="January 1, 2999" />
+        <local:StreamViewModel
+            Context="Course1 - Monday, January 1, 2999"
+            ContextType=""
+            CourseId="1"
+            CreatedAt="January 1, 2999"
+            InnerId="1"
+            ItemType="Announcement"
+            Message="Here's the Announcement, Dude"
+            Title="Here's the Announcement Title"
+            UpdatedAt="January 1, 2999" />
+    </local:MainViewModel.StreamItems>
+    
+    <local:MainViewModel.Profile>
+        <local:ProfileViewModel
+            Name="Test Name"
+            PrimaryEmail="test@email.address.com"
+            LoginId="test@login.id.edu"
+            Domain="test.canvas.com" />
+    </local:MainViewModel.Profile>
+
+</local:MainViewModel>
